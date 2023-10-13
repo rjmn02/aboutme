@@ -3,9 +3,3 @@ function clicked(){
     par.textContent = "clicked";
     document.body.appendChild(par);
 }
-
-function back(){
-    console.log("tanginamo");
-}
-
-back();

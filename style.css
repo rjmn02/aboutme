@@ -1,44 +1,66 @@
+*{
+    font-family: Roboto Mono, monospace;
+}
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+    margin: 0;
     background-color: #624365;
-    font-family: Roboto Mono, monospace;
 }
 
-p{
-    text-align: center;
-}
-
-
-.button {
-    font-family: Roboto Mono, monospace;
+.btn-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: black;
-    background-color: beige;
-    width: 200px;
-    font-size: 20px;
-    border: 3px solid;
-    border-color: black;
-    border-radius: 3px;
-    padding: 5px;
-}
-
-.button:hover{
     background-color: #8b5d80;
-    animation: name duration timing-function delay iteration-count direction fill-mode;
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btn-socials:hover{
+    background-color: transparent;
     transition-duration: 50ms;
 }
 
-.button:active {
+.btn-socials:active {
     background-color: #624365;
-    transition: linear;
     transition-duration: 50ms;
 }
+
+.btn-text{
+    margin: 10px;
+}
+
+
 
 #socials-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
     background-color: beige;
-    display: grid;
-    border: 3px solid;
-    border-color: black;
-    border-radius: 3px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+
+
+@media screen and (max-width: 600px){
+    #socials-container{
+        display: block;
+        
+    }
+
+    .btn-text{
+        display: none;
+    }
+
+    
 }

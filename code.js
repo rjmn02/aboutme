@@ -2,7 +2,7 @@ function main(){
     facebookButton()
     igButton()
     githubButton()
-    gmailButton()
+
 }
 
 function bgAnimation(){
@@ -30,10 +30,5 @@ function githubButton(){
     });
 }
 
-function gmailButton(){
-    let button = document.getElementById("gmailButton");
-    button.addEventListener("click", () => {
-        window.open("https://github.com/rjmn02");
-    });
-}
+
 main()
